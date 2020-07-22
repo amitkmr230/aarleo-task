@@ -14,13 +14,13 @@ function CiInsuranceCalculator() {
     const [rp, setRp] = useState({ x: 6 });
 
     ReactFC.fcRoot(FusionCharts, Charts, FusionTheme);
-    
+
     let Data = {
         "chart": {
           "xAxisName": "Assumptions",
           "numberSuffix": "K",
           "numberPrefix": "$",
-          "theme": "fusion"
+          "theme": "fusion",
         },
         "data": [
           {
@@ -37,7 +37,7 @@ function CiInsuranceCalculator() {
 
       const chartConfigs = {
         type: 'column2d',
-        width: 600,
+        width: "100%",
         height: 400,
         dataFormat: 'json',
         dataSource: Data ,
@@ -54,7 +54,7 @@ function CiInsuranceCalculator() {
                         <label>Desired replacement income (after-tax)<i className="icon-info-sign"></i></label>                        
                             <div className="box">
                                 <div>
-                                {dri.x}
+                                $ {dri.x}
                                 </div>
                                 <div className="float-right">
                                 /month
@@ -84,7 +84,7 @@ function CiInsuranceCalculator() {
                         <label>Out-of-pocket healthcare expenses<i className="icon-info-sign"></i></label>                        
                             <div className="box">
                                 <div>
-                                {ohe.x}
+                                $ {ohe.x}
                                 </div>
                                 <div className="float-right">
                                 /month
@@ -114,7 +114,7 @@ function CiInsuranceCalculator() {
                         <label>Home modification expenses<i className="icon-info-sign"></i></label>                        
                             <div className="box">
                                 <div>
-                                {hme.x}
+                                $ {hme.x}
                                 </div>
                                 <div className="float-right">
                                 /month
@@ -144,7 +144,7 @@ function CiInsuranceCalculator() {
                         <label>Medical homecare expenses<i className="icon-info-sign"></i></label>                        
                             <div className="box">
                                 <div>
-                                {mhe.x}
+                                $ {mhe.x}
                                 </div>
                                 <div className="float-right">
                                 /month
@@ -174,7 +174,7 @@ function CiInsuranceCalculator() {
                         <label>Other expenses (transport, childcare, etc)<i className="icon-info-sign"></i></label>
                             <div className="box">
                                 <div>
-                                {oe.x}
+                                $ {oe.x}
                                 </div>
                                 <div className="float-right">
                                 /month
@@ -209,7 +209,7 @@ function CiInsuranceCalculator() {
                                 <div className="col-6">
                                 <i className="fa fa-plus-circle"></i><p>Recovery Period<i className="icon-info-sign"></i></p>
                                 </div>
-                                <div className="col-6">
+                                <div className="col-6 center">
                                 <div className="box text-left">
                                 <div>
                                 {rp.x}

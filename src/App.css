@@ -41,7 +41,7 @@ label, .float-right {
 
 .Box {
     border: 1px solid #ffffff;
-    padding: 35px;
+    padding: 3rem;
     -webkit-box-shadow: -5px 4px 5px -1px rgba(148,135,148,1);
     -moz-box-shadow: -5px 4px 5px -1px rgba(148,135,148,1);
     box-shadow: -5px 4px 5px -1px rgba(148,135,148,1);
@@ -64,4 +64,37 @@ ReactFC {
 
 .highlight {
   color: #17B3E4;
+}
+
+@media only screen and (max-width: 400px) {
+  .Box {    
+    padding: 0;    
+}
+ label {
+   font-size: 8px
+ }  
+
+ p {
+   font-size: 10px;
+ }
+
+ i {
+   font-size: 8px
+ }
+
+ .box {
+   padding: 0 5px;
+ }
+
+ .box > div {
+   font-size: 10px;
+   padding: 0;
+ }
+ h1 {
+   font-size:20px;
+ }
+
+ .float-right {
+   margin-top: 5px;
+ }
 }
