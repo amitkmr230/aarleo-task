@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  font-family: lato;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box {
+  border: 1px solid;
+  padding: 0 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.box > div {
+  display: inline-block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.css-yvszuv-Slider {
+  width: 98% !important;
+  height: 5px !important;
+  margin-left: 5px !important;
 }
 
-.App-link {
-  color: #61dafb;
+i {
+  font-size: 12px;
+  color: #B4B7B8;
+  opacity: 0.7;
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label, .float-right {
+  font-size: 16px;
+  font-family: lato;
+}
+
+.fa-plus-square-o {
+  color: #17B3E4 !important;
+  float: right;
+  font-weight: 600;
+}
+
+.Box {
+    border: 1px solid #ffffff;
+    padding: 35px;
+    -webkit-box-shadow: -5px 4px 5px -1px rgba(148,135,148,1);
+    -moz-box-shadow: -5px 4px 5px -1px rgba(148,135,148,1);
+    box-shadow: -5px 4px 5px -1px rgba(148,135,148,1);
+}
+
+p {
+  display: inline-block;
+}
+
+.fa-plus-circle {
+  border: 3px solid red;
+  border-radius: 50%;
+  padding: 0;
+  margin-right: 5px;
+}
+
+ReactFC {
+  margin-top: 15px;
+}
+
+.highlight {
+  color: #17B3E4;
 }
